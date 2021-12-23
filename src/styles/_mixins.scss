@@ -1,0 +1,86 @@
+@mixin container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  @include lg {
+    max-width: 966px;
+  }
+  @media screen and (max-width: 1000px) {
+    max-width: calc(100vw - 60px);
+  }
+  @include sm {
+    max-width: calc(100vw - 20px);
+  }
+}
+
+@mixin yellow_button {
+  background-color: #ffc91e;
+  border-radius: 3px;
+  color: #282d33;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 40px;
+  border: 1px solid #ffc91e;
+  cursor: pointer;
+  @include sm {
+    font-size: 12px;
+    padding: 9px 16px;
+  }
+}
+@mixin heading {
+  text-transform: uppercase;
+  margin-bottom: 38px;
+  font-size: 36px;
+  padding-left: 10px;
+  border-left: 5px solid #ffc91e;
+}
+
+@mixin page_wrapper {
+  @include flex_between;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+@mixin flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Large tablets + small desktop screens */
+@mixin lg {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
+/* tablets */
+@mixin md {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+/* phones */
+@mixin sm {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media screen and (max-width: 415px) {
+    @content;
+  }
+}
+
+@mixin xss {
+  @media screen and (max-width: 335px) {
+    @content;
+  }
+}

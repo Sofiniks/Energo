@@ -1,0 +1,59 @@
+@import "../../styles/mixins";
+
+.donations {
+    margin-bottom: 80px;
+    &_container {
+        @include container;
+    }
+    &_content {
+        width: 100%;
+        display: flex;
+    }
+    &_text {
+        width: 40%;
+        background-color: #282d33;
+        color: #fff;
+        padding: 40px;
+        h3 {
+            color: #ffc91e;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        button {
+            @include yellow_button;
+            padding: 9px 85px;
+        }
+        ul {
+            max-width: 240px;
+            margin-bottom: 40px;
+        }
+    }
+    &_desc {
+        margin-bottom: 20px;
+    }
+    &_credentials {
+        &_item {
+            margin-bottom: 20px;
+            font-weight: 300;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            h4 {
+                text-transform: uppercase;
+                font-size: 14px;
+                color: rgba(#fff, .5);
+                margin-bottom: 5px;
+                font-weight: 300;
+            }
+        }
+    }
+    &_img {
+        width: 60%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

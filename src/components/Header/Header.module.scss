@@ -1,0 +1,66 @@
+@import "../../styles/mixins";
+
+.header {
+    background-color: white;
+    height: 80px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    &_left {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_logo {
+        display: flex;
+        align-items: center;
+    }
+    &_nav {
+        display: flex;
+        align-items: flex-end;
+        ul {
+            display: flex;
+        }
+        li {
+            margin-right: 40px;
+            padding-bottom: 24px;
+            font-weight: 600;
+            font-size: 18px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+    &_right {
+        display: flex;
+        align-items: center;
+    }
+    &_contacts {
+        display: flex;
+        align-items: flex-start;
+        margin-right: 45px;
+        img {
+            margin-right: 15px;
+        }
+        &_phone {
+            font-weight: 600;
+        }
+    }
+    &_language {
+        &_box {
+          width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            background-color: rgba(0,0,0,0.1);  
+        } 
+    }
+    
+}

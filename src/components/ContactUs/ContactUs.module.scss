@@ -1,0 +1,97 @@
+@import "../../styles/mixins";
+
+.contacts {
+    margin-bottom: 80px;
+    &_container {
+        @include container;
+    }
+    h2 {
+        @include heading;
+    }
+    form {
+        background-color: #282d33;
+        width: calc(100% - 100px);
+        color: #fff;
+        padding: 60px 0 60px 280px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        input, textarea {
+            max-width: 400px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid rgba(#fff, .5);
+            padding: 7px;
+        }
+        input {
+            margin-bottom: 30px;
+        }
+        textarea {
+            margin-bottom: 50px;
+        }
+        button {
+            @include yellow_button;
+        }
+        ::placeholder {
+            color: white;
+        }
+    }
+    &_form {
+        display: flex;
+        justify-content: flex-end;
+        h4 {
+            font-weight: 300;
+            &:last-of-type {
+             margin-bottom: 20px;   
+            }
+        }
+        &_absolute {
+            position: absolute;
+            background-color: #ffc91e;
+            width: 300px;
+            height: 375px;
+            top: 40px;
+            left: -100px;
+            padding: 40px 40px 0 30px;
+            h5 {
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #282d33;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &_list {
+        margin-bottom: 40px;
+        &_item {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 30px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            img {
+                margin-right: 25px;
+            }
+            p {
+                color: #282d33;
+            }
+        }
+    }
+    &_socials {
+        display: flex;
+        &_item {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: rgba(255,255,255,.2);
+            border-radius: 3px;
+            margin-right: 12px;
+        }
+    }
+    
+}
