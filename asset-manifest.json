@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/Energo/static/css/main.786f300f.css",
+    "main.js": "/Energo/static/js/main.3b06173d.js",
+    "static/js/787.b6237803.chunk.js": "/Energo/static/js/787.b6237803.chunk.js",
+    "static/media/servicesBanner.jpg": "/Energo/static/media/servicesBanner.38aec0e58bde59181729.jpg",
+    "static/media/eng.svg": "/Energo/static/media/eng.7a5fb183f12922c05275df2fe0cfce38.svg",
+    "static/media/energyBanner.jpg": "/Energo/static/media/energyBanner.4fb352ec06338f86f612.jpg",
+    "static/media/mainBanner.jpg": "/Energo/static/media/mainBanner.017d2bfcacd57359dd13.jpg",
+    "static/media/Services1.png": "/Energo/static/media/Services1.c92eced002f99f9f5b48.png",
+    "static/media/solar_battery.png": "/Energo/static/media/solar_battery.ed3a9d3f6b67bbe00911.png",
+    "static/media/donations.png": "/Energo/static/media/donations.ba58d0a70c68cc899b82.png",
+    "static/media/land.png": "/Energo/static/media/land.b57768d90437c56d1d3c.png",
+    "static/media/Services3.png": "/Energo/static/media/Services3.ee22768f6e1801d1b168.png",
+    "static/media/Services4.png": "/Energo/static/media/Services4.88ebf3b2d8d15b091aac.png",
+    "static/media/Services2.png": "/Energo/static/media/Services2.e035ee5e566771d8c189.png",
+    "static/media/building_icon3.svg": "/Energo/static/media/building_icon3.d11552c9839371ed1355e63cb84bd1db.svg",
+    "static/media/building_icon1.svg": "/Energo/static/media/building_icon1.271102c4e863d92b6af85762c8637dff.svg",
+    "static/media/building_icon4.svg": "/Energo/static/media/building_icon4.d6adbfbe02f35ebc72f8edbefb7173c4.svg",
+    "static/media/building_icon2.svg": "/Energo/static/media/building_icon2.609680fd51f5c1e17821869b82461935.svg",
+    "static/media/instagram.svg": "/Energo/static/media/instagram.8c427e21475f9fb9554a5018f4ff8f4f.svg",
+    "static/media/whatsapp.svg": "/Energo/static/media/whatsapp.8a91ec05bbe1f22b45e3eb0f4740768b.svg",
+    "static/media/phone_black.svg": "/Energo/static/media/phone_black.1f0b5b5a8cc5f76ad1620738dd16f36d.svg",
+    "static/media/phone.svg": "/Energo/static/media/phone.46f5ca7e2fdced6135dacb9515a53c02.svg",
+    "static/media/location.svg": "/Energo/static/media/location.e97f8c828b88b88578e323ace711dfb5.svg",
+    "static/media/location_black.svg": "/Energo/static/media/location_black.2c053bc11dbe4693b0adbb296725e954.svg",
+    "static/media/message.svg": "/Energo/static/media/message.5b462210e99ab9b10351d03ec5925866.svg",
+    "static/media/letter_black.svg": "/Energo/static/media/letter_black.819321c49cf1357dbb185e0916e405cf.svg",
+    "static/media/facebook.svg": "/Energo/static/media/facebook.67897879e6924a8835fbd67782fe247c.svg",
+    "static/media/contact.svg": "/Energo/static/media/contact.e74493c08bf229d979c7648ea180e2a9.svg",
+    "index.html": "/Energo/index.html",
+    "main.786f300f.css.map": "/Energo/static/css/main.786f300f.css.map",
+    "main.3b06173d.js.map": "/Energo/static/js/main.3b06173d.js.map",
+    "787.b6237803.chunk.js.map": "/Energo/static/js/787.b6237803.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.786f300f.css",
+    "static/js/main.3b06173d.js"
+  ]
+}
