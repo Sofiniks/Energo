@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './WhyChooseUs.module.scss';
+import { useMediaQuery } from 'react-responsive';
 import { textCut } from '../../helpers';
 import advantage1 from '../../assets/Services1.png';
 import advantage2 from '../../assets/land.png';
@@ -30,6 +31,7 @@ const advantages = [
 ]
 
 const WhyChooseUs = () => {
+    const isTablet = useMediaQuery({ maxWidth: 1023 });
     const [activeIndex, setActiveIndex] = useState(-1);
     const toggleIsHidden = (index) => {
         setActiveIndex(index)
@@ -53,6 +55,17 @@ const WhyChooseUs = () => {
             </li>
         )
     })
+
+    const advantagesListMobile = advantages.map((item, index) => {
+        return (
+            <li key={index} className={styles.why_item}>
+                <div className={styles.why_mobile}>
+                    <h3>{item.title}</h3>
+                    <p>{item.desc}</p>
+                </div>
+            </li>
+        )
+    })
     return (
         <div className={styles.why}>
             <div className={styles.why_container}>
@@ -60,7 +73,7 @@ const WhyChooseUs = () => {
                     Why choose us
                 </h2>
                 <ul className={styles.why_list}>
-                    {advantageList}
+                    {isTablet ? advantagesListMobile : advantageList}
                 </ul>
             </div>
         </div>

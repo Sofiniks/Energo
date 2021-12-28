@@ -5,6 +5,10 @@
     margin-bottom: 80px;
     padding: 40px 0;
     color: #fff;
+    @include md {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
     &_container {
         @include container;
         text-align: center;
@@ -16,6 +20,16 @@
         max-width: 760px;
         font-size: 24px;
         line-height: 29px;
+        @include md {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 500;
+            max-width: 350px;
+        }
+        @include sm {
+            font-size: 14px;
+            line-height: 17px;
+        }
         span {
             color: #ffc91e;
         }
@@ -41,6 +55,12 @@
         &:last-of-type {
             margin-right: 0;
         }
+        @include md {
+            width: 25px;
+            height: 34px;
+            font-size: 22px;
+            margin-right: 4px;
+        }
     }
     &_commas {
         height: 70px;
@@ -52,5 +72,12 @@
         font-size: 40px;
         margin-right: 10px;
         font-weight: bold;
+        @include md {
+            font-size: 18px;
+            height: 29px;
+            width: 6px;
+            margin-right: 4px;
+            align-items: flex-end;
+        }
     }
 }

@@ -11,6 +11,10 @@
     left: 0;
     right: 0;
     z-index: 10;
+    @include sm {
+        height: 60px;
+        padding: 0 20px;
+    }
     &_left {
         width: 40%;
         display: flex;
@@ -19,6 +23,10 @@
     &_logo {
         display: flex;
         align-items: center;
+        margin-right: 80px;
+        @include md {
+            margin-right: 0;
+        }
     }
     &_nav {
         display: flex;
@@ -31,6 +39,7 @@
             padding-bottom: 24px;
             font-weight: 600;
             font-size: 18px;
+            white-space: nowrap;
             &:last-of-type {
                 margin-right: 0;
             }
@@ -53,14 +62,69 @@
     }
     &_language {
         &_box {
-          width: 45px;
+            width: 45px;
             height: 45px;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 3px;
-            background-color: rgba(0,0,0,0.1);  
+            background-color: rgba(0,0,0,0.1); 
+            @include sm {
+                width: 35px;
+                height: 35px;
+                img {
+                    width: 23px;
+                    height: 15px;
+                }
+            } 
         } 
     }
+    &_mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        // position: relative;
+    }
     
+}
+.overlay {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 1000vh;
+    background-color: rgba(#000, .7);
+    z-index: 2;
+    @include sm {
+        top: 60px;
+    }
+}
+.toggle_burger {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 3;
+    height: 0;
+    transition: all .3s;
+    right: 0;
+    max-width: 100%;
+    ul {
+        max-height: 200px;
+        height: 170px;
+        overflow-y: scroll;
+        background-color: #282d33;
+        max-width: 100%;
+        padding: 20px;
+    }
+    li {
+        cursor: pointer;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
 }

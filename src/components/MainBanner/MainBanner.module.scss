@@ -4,6 +4,9 @@
     background-color: #282d33;
     margin-bottom: 80px;
     padding: 20px 0;
+    @include md {
+        margin-bottom: 40px;
+    }
     &_container {
         @include container;
         color: rgba(#fff, .5);
@@ -11,14 +14,40 @@
         ul {
             display: flex;
             justify-content: space-between;
+            @include md {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        li {
+            @include md {
+                margin-bottom: 20px;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
         }
         h3 {
             font-size: 64px;
             color: #ffc91e;
             margin-bottom: 5px;
+            @include md {
+                font-size: 36px;
+            }
         }
         h4 {
             font-size: 24px;
+            @include md {
+                font-size: 18px;
+            }
+        }
+        p {
+            font-size: 18px;
+            @include md {
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
         }
     }
 }

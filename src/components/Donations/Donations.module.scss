@@ -2,8 +2,16 @@
 
 .donations {
     margin-bottom: 80px;
+    @include md {
+        margin-bottom: 20px;
+    }
     &_container {
         @include container;
+        @include md {
+            margin: 0 auto;
+            background-color: #282d33;
+            max-width: 100%;
+        }
     }
     &_content {
         width: 100%;
@@ -14,11 +22,17 @@
         background-color: #282d33;
         color: #fff;
         padding: 40px;
+        @include md {
+            width: 100%;
+        }
         h3 {
             color: #ffc91e;
             font-size: 36px;
             margin-bottom: 20px;
             text-transform: uppercase;
+            @include md {
+                font-size: 24px;
+            }
         }
         button {
             @include yellow_button;
@@ -31,6 +45,14 @@
     }
     &_desc {
         margin-bottom: 20px;
+        @include md {
+            font-size: 14px;
+            line-height: 17px;
+            max-width: 75%;
+        }
+        @include sm {
+            max-width: 100%;
+        }
     }
     &_credentials {
         &_item {

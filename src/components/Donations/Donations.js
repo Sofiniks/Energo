@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './Donations.module.scss';
+import { useMediaQuery } from 'react-responsive';
 import DonationsImage from '../../assets/donations.png';
 
 const Donations = () => {
+    const isTablet = useMediaQuery({ maxWidth: 1023 });
     const credentials = [
         {
             title: 'Name',
@@ -33,9 +35,9 @@ const Donations = () => {
                         <ul>{credentialsList}</ul>
                         <button>Donate</button>
                     </div>
-                    <div className={styles.donations_img}>
+                    {!isTablet && <div className={styles.donations_img}>
                         <img src={DonationsImage} alt="donations" />
-                    </div>
+                    </div>}
                 </div>
             </div>
         </div>

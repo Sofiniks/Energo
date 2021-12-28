@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Projects.module.scss';
 import { textCut } from '../../helpers';
+import { useMediaQuery } from 'react-responsive';
 import advantage1 from '../../assets/Services1.png';
 import advantage2 from '../../assets/land.png';
 import advantage3 from '../../assets/servicesBanner.jpg';
@@ -30,6 +31,7 @@ const projects = [
 ]
 
 const Projects = () => {
+    const isTablet = useMediaQuery({ maxWidth: 1023 });
     const [activeIndex, setActiveIndex] = useState(-1);
     const toggleIsHidden = (index) => {
         setActiveIndex(index)
@@ -53,6 +55,21 @@ const Projects = () => {
             </li>
         )
     })
+
+    const projectsListMobile = projects.map((item, index) => {
+        return (
+            <li key={index} className={styles.projects_mobile_item}>
+                <div className={styles.projects_mobile_img}>
+                    <img src={item.img} alt="advantage" />
+                </div>
+                <div className={styles.projects_mobile_block}>
+                    <h3>{item.title}</h3>
+                    <p>{item.desc}</p>
+                </div>
+            </li>
+        )
+    })
+
     return (
         <div className={styles.projects}>
             <div className={styles.projects_container}>
@@ -60,7 +77,7 @@ const Projects = () => {
                     Our Projects
                 </h2>
                 <ul className={styles.projects_list}>
-                    {projectsList}
+                    {isTablet ? projectsListMobile : projectsList}
                 </ul>
             </div>
         </div>

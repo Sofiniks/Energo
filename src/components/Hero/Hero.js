@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './Hero.module.scss';
-import Banner1 from '../../assets/mainBanner.jpg';
+import { useMediaQuery } from 'react-responsive';
 import buildIcon1 from '../../assets/building_icon1.svg';
 import buildIcon2 from '../../assets/building_icon2.svg';
 import buildIcon3 from '../../assets/building_icon3.svg';
 import buildIcon4 from '../../assets/building_icon4.svg';
 
 const Hero = ({ withOverlay, isMainPage, bannerImage }) => {
+    const isTablet = useMediaQuery({ maxWidth: 1023 });
     const descArr = [
         {
             img: buildIcon1,
@@ -43,7 +44,8 @@ const Hero = ({ withOverlay, isMainPage, bannerImage }) => {
             backgroundImage: `url(${bannerImage})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            marginBottom: isMainPage ? '230px' : '80px'
+            // marginBottom: isMainPage ? '230px' : '80px'
+            marginBottom: isMainPage ? isTablet ? '300px' : '230px' : isTablet ? '0' : '80px'
         }}>
 
             <div className={styles.hero_container}>
@@ -56,7 +58,7 @@ const Hero = ({ withOverlay, isMainPage, bannerImage }) => {
                 </div>
 
             </div>
-            {withOverlay && <div className={styles.hero_overlay}></div>}
+            {withOverlay && !isTablet && <div className={styles.hero_overlay}></div>}
             {isMainPage &&
                 <div className={styles.hero_desc}>
                     <div className={styles.hero_desc_container}>

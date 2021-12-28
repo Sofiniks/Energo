@@ -3,6 +3,9 @@
 .hero {
     height: 95vh;
     position: relative;
+    @include sm {
+        height: 90vh;
+    }
     &_overlay {
         position: absolute;
         display: block;
@@ -20,6 +23,9 @@
         padding: 0 100px;
         z-index: 2;
         position: absolute;
+        @include sm {
+            padding: 0 25px 0 40px;
+        }
         &_text {
             max-width: 560px;
             color: white;
@@ -30,12 +36,29 @@
                 margin-bottom: 23px;
                 padding-left: 32px;
                 border-left: 10px solid #ffc91e;
+                @include md {
+                    font-size: 48px;
+                    padding-left: 18px;
+                    border-left: 8px solid #ffc91e;
+                }
+                @include sm {
+                    font-size: 36px;
+                    padding-left: 10px;
+                    border-left: 5px solid #ffc91e;
+                }
             }
             h3 {
                 margin-bottom: 20px;
                 font-weight: 500;
                 font-size: 24px;
                 padding-left: 50px;
+                @include md {
+                    padding-left: 33px;
+                }
+                @include sm {
+                    padding-left: 20px;
+                    font-size: 18px;
+                }
             }
             span {
                 color: #ffc91e;
@@ -47,6 +70,12 @@
     }
     &_button_container {
         padding-left: 50px;
+        @include md {
+            padding-left: 33px;
+        }
+        @include sm {
+            padding-left: 20px;
+        }
     }
     &_desc {
         position: absolute;
@@ -55,13 +84,30 @@
         left: 0;
         right: 0;
         transform: translateY(50%);
+        &::-webkit-scrollbar {
+            display: none !important;
+        }
+        @include md {
+            // left: unset;
+            left: 0;
+            right: unset;
+            width: 100%;
+            overflow-x: scroll;
+            transform: translateY(100%);
+        }
         &_container {
             @include container;
+            @include md {
+                margin: 0;
+            }
         }
         ul {
             display: flex;
             background-color: #fff;
             box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+            @include md {
+                min-width: 100%;
+            }
         }
         li {
             width: 25%;
@@ -69,7 +115,7 @@
             text-align: center;
             position: relative;
             transition: all .3s;
-            &:nth-of-type(3) {
+            background-color: #fff;
                &:after {
                 content: '';
                 display: block;
@@ -78,15 +124,18 @@
                 position: absolute;
                 right: 0;
                 top: 50%;
-                background-color: rgba(0,0,0,0.1);
+                background-color: rgba(0,0,0,0.08);
                 transform: translateY(-50%);
                 } 
-            }
             
-            &:nth-of-type(2) {
+            &:hover {
                 background-color: #ffc91e;
                 transform: scaleY(1.07);
                 box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            }
+            @include md {
+                min-width: 300px;
+                height: 300px;
             }
         }
         img {

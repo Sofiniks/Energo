@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './WhatWeDo.module.scss';
+import { useMediaQuery } from 'react-responsive';
 import SolarBattery from '../../assets/solar_battery.png';
 
 const WhatWeDo = () => {
+    const isTablet = useMediaQuery({ maxWidth: 1023 });
     return (
         <div className={styles.do}>
             <div className={styles.do_container}>
@@ -18,9 +20,9 @@ const WhatWeDo = () => {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  aliqua. Lorem ipsum  sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <div className={styles.do_img}>
+                    {!isTablet && <div className={styles.do_img}>
                         <img src={SolarBattery} alt="solar" />
-                    </div>
+                    </div>}
                 </div>
             </div>
         </div>

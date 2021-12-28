@@ -2,6 +2,9 @@
 
 .why {
     margin-bottom: 90px;
+    @include md {
+        margin-bottom: 40px;
+    }
     &_container {
         @include container;
     }
@@ -10,12 +13,39 @@
     }
     &_list {
         display: flex;
+        @include md {
+            width: 100%;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+            display: none !important;
+        }
+        }
     }
     &_item {
         margin-right: 30px;
         position: relative;
         &:last-of-type {
             margin-right: 0;
+        }
+    }
+    &_mobile {
+        background-color: #ffc91e;
+        width: 285px;
+        min-height: 300px;
+        padding: 20px;
+        margin-right: 20px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        h3 {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 14px;
+            @include sm {
+                font-size: 12px;
+            }
         }
     }
     &_img {
