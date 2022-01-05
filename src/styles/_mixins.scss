@@ -22,10 +22,10 @@
   padding: 14px 40px;
   border: 1px solid #ffc91e;
   cursor: pointer;
-  // @include sm {
-  //   font-size: 18px;
-  //   padding: 9px 16px;
-  // }
+  transition: all .2s;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 @mixin heading {
   text-transform: uppercase;

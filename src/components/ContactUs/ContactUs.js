@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './ContactUs.module.scss';
 import { useMediaQuery } from 'react-responsive';
 import location_black from '../../assets/location_black.svg';
@@ -7,13 +7,32 @@ import phone_black from '../../assets/phone_black.svg';
 import whatsapp from '../../assets/whatsapp.svg';
 import facebook from '../../assets/facebook.svg';
 import instagram from '../../assets/instagram.svg';
+import Tick from '../../assets/tick.svg';
+import Cross from '../../assets/cross.svg';
+import MessageModal from '../MessageModal/MessageModal';
+
+
 
 const Form = () => {
     const isTablet = useMediaQuery({ maxWidth: 1023 });
+    const [toggleModal, setToggleModal] = useState(false);
+    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSetgEtHoQZKp9MyzOIrfZywXliazcAHhfMgrogNFp135jS2kg/formResponse';
+
+    const handleSubmit = () => {
+        setToggleModal(true);
+        setTimeout(window.location.reload.bind(window.location), 10000);
+    }
+
+    const handleModalClose = () => {
+        setToggleModal(false);
+        window.location.reload.bind(window.location)();
+    }
+
     if (isTablet) {
         return (
             <div className={styles.contacts}>
-
+                {toggleModal && <div className={styles.contacts_overlay} onClick={handleModalClose}></div>}
+                {toggleModal && <MessageModal onClick={handleModalClose} />}
                 <div className={styles.contacts_form_mobile}>
                     <div className={styles.contacts_container}>
                         <h5>Contacts</h5>
@@ -41,13 +60,26 @@ const Form = () => {
                 </div>
                 <div className={styles.contacts_form}>
                     <div className={styles.contacts_container}>
-                        <form action="" >
+                        <iframe
+                            title="hidden_iframe"
+                            name="hidden_iframe"
+                            id="hidden_iframe"
+                            style={{ visibility: 'hidden', height: '14px' }}
+                        >
+
+                        </iframe>
+                        <form
+                            action={GOOGLE_FORM_URL}
+                            method='post'
+                            target='hidden_iframe'
+                            onSubmit={handleSubmit}
+                        >
                             <h4>Feel free to contact us any time</h4>
                             <h4>We will get back to you as soon as we can!</h4>
 
-                            <input type="text" placeholder='Name' required />
-                            <input type="text" placeholder='Email or Phone' required />
-                            <textarea name="t" rows="1" placeholder='Message'></textarea>
+                            <input name="entry.988393553" type="text" placeholder='Name' required />
+                            <input name="entry.1903855961" type="text" placeholder='Email or Phone' required />
+                            <textarea name='entry.1057069905' rows="1" placeholder='Message' required></textarea>
 
                             <div className={styles.contacts_form_button}>
                                 <button type='submit'>Action</button>
@@ -64,16 +96,31 @@ const Form = () => {
     else {
         return (
             <div className={styles.contacts}>
+                {toggleModal && <div className={styles.contacts_overlay} onClick={handleModalClose}></div>}
+                {toggleModal && <MessageModal onClick={handleModalClose} />}
                 <div className={styles.contacts_container}>
                     <h2>Contact us</h2>
                     <div className={styles.contacts_form}>
-                        <form action="" >
+                        <iframe
+                            title="hidden_iframe"
+                            name="hidden_iframe"
+                            id="hidden_iframe"
+                            style={{ visibility: 'hidden', height: '14px' }}
+                        >
+
+                        </iframe>
+                        <form
+                            action={GOOGLE_FORM_URL}
+                            method='post'
+                            target='hidden_iframe'
+                            onSubmit={handleSubmit}
+                        >
                             <h4>Feel free to contact us any time</h4>
                             <h4>We will get back to you as soon as we can!</h4>
 
-                            <input type="text" placeholder='Name' required />
-                            <input type="text" placeholder='Email or Phone' required />
-                            <textarea name="t" rows="1" placeholder='Message'></textarea>
+                            <input type="text" placeholder='Name' name="entry.988393553" required />
+                            <input type="text" placeholder='Email or Phone' name="entry.1903855961" required />
+                            <textarea rows="1" placeholder='Message' name='entry.1057069905' required></textarea>
 
                             <div className={styles.contacts_form_button}>
                                 <button type='submit'>Action</button>

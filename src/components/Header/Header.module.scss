@@ -27,6 +27,10 @@
         @include md {
             margin-right: 0;
         }
+        transition: all .2s;
+        &:hover {
+            transform: scale(1.05);
+        }
     }
     &_nav {
         display: flex;
@@ -40,9 +44,13 @@
             font-weight: 600;
             font-size: 18px;
             white-space: nowrap;
-            &:last-of-type {
-                margin-right: 0;
-            }
+            transition: all .2s;
+                &:hover {
+                transform: scale(1.05);
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
         }
     }
     &_right {

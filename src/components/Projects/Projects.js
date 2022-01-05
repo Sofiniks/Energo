@@ -1,34 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Projects.module.scss';
 import { textCut } from '../../helpers';
+import { projects } from '../../data';
 import { useMediaQuery } from 'react-responsive';
-import advantage1 from '../../assets/Services1.png';
-import advantage2 from '../../assets/land.png';
-import advantage3 from '../../assets/servicesBanner.jpg';
-import advantage4 from '../../assets/solar_battery.png';
-
-const projects = [
-    {
-        title: 'Item title 1',
-        desc: '1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        img: advantage1
-    },
-    {
-        title: 'Item title 2',
-        desc: '2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        img: advantage2
-    },
-    {
-        title: 'Item title 3',
-        desc: '3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        img: advantage3
-    },
-    {
-        title: 'Item title 4',
-        desc: '4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        img: advantage4
-    }
-]
 
 const Projects = () => {
     const isTablet = useMediaQuery({ maxWidth: 1023 });

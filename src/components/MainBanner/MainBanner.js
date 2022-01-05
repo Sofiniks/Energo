@@ -1,27 +1,11 @@
 import React from 'react';
 import styles from './MainBanner.module.scss';
+import { mainBannerNumbers } from '../../data';
 import { useMediaQuery } from 'react-responsive';
 
 const MainBanner = () => {
     const isTablet = useMediaQuery({ maxWidth: 1023 });
-    const bannerNumbers = [
-        {
-            number: '20 000+',
-            title: 'Projects',
-            text: 'already implemented'
-        },
-        {
-            number: '15+',
-            title: 'Years',
-            text: 'on the market'
-        },
-        {
-            number: '3.5m',
-            title: 'Investments',
-            text: 'attracted to our company'
-        }
-    ]
-    const bannerList = bannerNumbers.map((item, index) => {
+    const bannerList = mainBannerNumbers.map((item, index) => {
         return (
             <li key={index}>
                 {isTablet ? <>

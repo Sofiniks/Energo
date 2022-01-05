@@ -19,10 +19,6 @@ const Header = () => {
         {
             title: 'Renewable Energy',
             to: '/Energo/energy'
-        },
-        {
-            title: 'Contacts',
-            to: '/Energo/contacts'
         }
     ]
     const [activeLink, setActiveLink] = useState(-1);
@@ -89,7 +85,7 @@ const Header = () => {
                             <img src={ContactsImg} alt="contacts" />
                             <div>
                                 <p>Contact us</p>
-                                <p className={styles.header_contacts_phone}>873-2934 1230</p>
+                                <a href="tel:873-2934 1230" className={styles.header_contacts_phone}>873-2934 1230</a>
                             </div>
                         </div>
                         <div className={styles.header_language}>

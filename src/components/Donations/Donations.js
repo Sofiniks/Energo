@@ -1,20 +1,12 @@
 import React from 'react';
 import styles from './Donations.module.scss';
+import { credentials } from '../../data';
 import { useMediaQuery } from 'react-responsive';
 import DonationsImage from '../../assets/donations.png';
 
 const Donations = () => {
     const isTablet = useMediaQuery({ maxWidth: 1023 });
-    const credentials = [
-        {
-            title: 'Name',
-            value: 'Energo'
-        },
-        {
-            title: 'Bank account',
-            value: '4321321458921394'
-        }
-    ]
+
     const credentialsList = credentials.map((item, index) => {
         return (
             <li key={index} className={styles.donations_credentials_item}>
