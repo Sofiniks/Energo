@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Energo/static/css/main.c2e87901.css",
-    "main.js": "/Energo/static/js/main.4ec4e229.js",
+    "main.css": "/Energo/static/css/main.32b01ed5.css",
+    "main.js": "/Energo/static/js/main.8f14507e.js",
     "static/js/787.b6237803.chunk.js": "/Energo/static/js/787.b6237803.chunk.js",
     "static/media/servicesBanner.jpg": "/Energo/static/media/servicesBanner.38aec0e58bde59181729.jpg",
     "static/media/eng.svg": "/Energo/static/media/eng.7a5fb183f12922c05275df2fe0cfce38.svg",
@@ -27,16 +27,18 @@
     "static/media/message.svg": "/Energo/static/media/message.5b462210e99ab9b10351d03ec5925866.svg",
     "static/media/letter_black.svg": "/Energo/static/media/letter_black.819321c49cf1357dbb185e0916e405cf.svg",
     "static/media/facebook.svg": "/Energo/static/media/facebook.67897879e6924a8835fbd67782fe247c.svg",
-    "static/media/contact.svg": "/Energo/static/media/contact.e74493c08bf229d979c7648ea180e2a9.svg",
     "index.html": "/Energo/index.html",
+    "static/media/contact.svg": "/Energo/static/media/contact.e74493c08bf229d979c7648ea180e2a9.svg",
+    "static/media/tick.svg": "/Energo/static/media/tick.c639f0b0365413d212da9f67b45e85f0.svg",
+    "static/media/tick_green.svg": "/Energo/static/media/tick_green.c6fdb642a1269dd030f1a60da9d6709e.svg",
     "static/media/cross.svg": "/Energo/static/media/cross.45ed2447af6a97b8c7ceda1ccf013090.svg",
     "static/media/burger.svg": "/Energo/static/media/burger.5101dd3325f8156c0500d9d71528df2f.svg",
-    "main.c2e87901.css.map": "/Energo/static/css/main.c2e87901.css.map",
-    "main.4ec4e229.js.map": "/Energo/static/js/main.4ec4e229.js.map",
+    "main.32b01ed5.css.map": "/Energo/static/css/main.32b01ed5.css.map",
+    "main.8f14507e.js.map": "/Energo/static/js/main.8f14507e.js.map",
     "787.b6237803.chunk.js.map": "/Energo/static/js/787.b6237803.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2e87901.css",
-    "static/js/main.4ec4e229.js"
+    "static/css/main.32b01ed5.css",
+    "static/js/main.8f14507e.js"
   ]
 }
