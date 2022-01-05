@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 import './styles/_globals.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import store from './store/configureStore';
+import { Provider } from "react-redux";
 
 ReactDOM.render(
-  <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
 

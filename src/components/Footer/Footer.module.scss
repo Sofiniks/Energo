@@ -4,53 +4,74 @@
     background-color: #282d33;
     padding: 20px 0;
     color: white;
+
     &_container {
         @include container;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+
     &_top {
         display: flex;
         justify-content: space-between;
         margin-bottom: 18px;
+
         @include md {
             flex-direction: column;
             align-items: center;
             margin-bottom: 40px;
         }
     }
+
     &_logo {
         @include md {
             margin-bottom: 30px;
         }
+
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 160px;
+        }
     }
+
     &_contacts {
         font-size: 14px;
         max-width: 230px;
         font-weight: 400;
+
         li {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+
             &:last-of-type {
                 margin-bottom: 0;
             }
         }
+
         img {
             margin-right: 15px;
         }
     }
+
     &_bottom {
         display: flex;
         justify-content: center;
     }
+
     &_credentials {
         span {
             color: #ffc91e;
             font-weight: 600;
         }
     }
+
     &_mobile {
         text-align: center;
         font-size: 18px;

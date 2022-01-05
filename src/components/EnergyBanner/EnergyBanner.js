@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './EnergyBanner.module.scss';
+import { energyBannerNumber } from '../../data';
 
 const EnergyBanner = () => {
-    const number = '15,597,255,043';
-    const arrFromNumber = Array.from(number);
+
+    const arrFromNumber = Array.from(energyBannerNumber);
     const numbersList = arrFromNumber.map((item, index) => {
         if (item === ',') {
             return (

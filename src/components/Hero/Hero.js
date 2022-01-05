@@ -1,41 +1,20 @@
 import React from 'react';
 import styles from './Hero.module.scss';
+import { heroBannerDescription } from '../../data';
 import { useMediaQuery } from 'react-responsive';
-import buildIcon1 from '../../assets/building_icon1.svg';
-import buildIcon2 from '../../assets/building_icon2.svg';
-import buildIcon3 from '../../assets/building_icon3.svg';
-import buildIcon4 from '../../assets/building_icon4.svg';
+import { useTranslation } from 'react-i18next';
+import i18next from '../../i18next';
 
-const Hero = ({ withOverlay, isMainPage, bannerImage }) => {
+const Hero = ({ withOverlay, isMainPage, bannerImage, text }) => {
     const isTablet = useMediaQuery({ maxWidth: 1023 });
-    const descArr = [
-        {
-            img: buildIcon1,
-            title: 'Item title 1',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-        },
-        {
-            img: buildIcon2,
-            title: 'Item title 2',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-        },
-        {
-            img: buildIcon3,
-            title: 'Item title 3',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-        },
-        {
-            img: buildIcon4,
-            title: 'Item title 4',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-        }
-    ]
-    const descList = descArr.map((item, index) => {
+    const { t } = useTranslation();
+
+    const descList = heroBannerDescription.map((item, index) => {
         return (
             <li key={index}>
                 <img src={item.img} alt="build" />
-                <h2>{item.title}</h2>
-                <p>{item.text}</p>
+                <h2>{i18next.t(`${item.title}`)}</h2>
+                <p>{i18next.t(`${item.text}`)}</p>
             </li>
         )
     })
@@ -44,16 +23,15 @@ const Hero = ({ withOverlay, isMainPage, bannerImage }) => {
             backgroundImage: `url(${bannerImage})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            // marginBottom: isMainPage ? '230px' : '80px'
             marginBottom: isMainPage ? isTablet ? '300px' : '230px' : isTablet ? '0' : '80px'
         }}>
 
             <div className={styles.hero_container}>
                 <div className={styles.hero_container_text}>
-                    <h1>Text Title</h1>
-                    <h3>Lorem ipsum <span>dolor sit amet</span>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                    <h1>{i18next.t(`title`)}</h1>
+                    <h3>{text}</h3>
                     <div className={styles.hero_button_container}>
-                        <button>Action</button>
+                        <button><a href='#contacts'>{i18next.t(`heroButton`)}</a></button>
                     </div>
                 </div>
 

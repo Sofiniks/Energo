@@ -2,12 +2,15 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+
   @include lg {
     max-width: 966px;
   }
+
   @media screen and (max-width: 1000px) {
     max-width: calc(100vw - 60px);
   }
+
   @include sm {
     max-width: calc(100vw - 20px);
   }
@@ -17,24 +20,31 @@
   background-color: #ffc91e;
   border-radius: 3px;
   color: #282d33;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   padding: 14px 40px;
   border: 1px solid #ffc91e;
   cursor: pointer;
-  // @include sm {
-  //   font-size: 18px;
-  //   padding: 9px 16px;
-  // }
+  transition: all .2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @include sm {
+    padding: 14px 30px;
+  }
 }
+
 @mixin heading {
   text-transform: uppercase;
   margin-bottom: 38px;
-  font-size: 36px;
+  font-size: 32px;
   padding-left: 10px;
   border-left: 5px solid #ffc91e;
+
   @include md {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -63,12 +73,14 @@
     @content;
   }
 }
+
 /* tablets */
 @mixin md {
   @media screen and (max-width: 1023px) {
     @content;
   }
 }
+
 /* phones */
 @mixin sm {
   @media screen and (max-width: 767px) {

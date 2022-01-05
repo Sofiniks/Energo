@@ -1,0 +1,39 @@
+@import "../../styles/mixins";
+
+.modal {
+  width: 500px;
+  height: 400px;
+display: flex;
+flex-direction: column;
+background-color: #1d2025;
+box-shadow: 0 4px 10px rgba(black, 0.5);
+position: fixed;
+padding: 25px 80px 40px 80px;
+justify-content: space-between;
+text-align: center;
+color: #fff;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+z-index: 10;
+h3 {
+  font-size: 24px;
+}
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+&_cross {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+&_button {
+  button {
+    @include yellow_button;
+    // border: 1px solid #52d1e0;
+    width: 140px;
+  }
+}
+}
