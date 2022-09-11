@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Energo/static/css/main.c91a0a2d.css",
-    "main.js": "/Energo/static/js/main.3bb36587.js",
+    "main.css": "/Energo/static/css/main.6c0ed559.css",
+    "main.js": "/Energo/static/js/main.8165b417.js",
     "static/js/787.b6237803.chunk.js": "/Energo/static/js/787.b6237803.chunk.js",
     "static/media/servicesBanner.jpg": "/Energo/static/media/servicesBanner.38aec0e58bde59181729.jpg",
     "static/media/eng.svg": "/Energo/static/media/eng.7a5fb183f12922c05275df2fe0cfce38.svg",
@@ -15,6 +15,7 @@
     "static/media/Services4.png": "/Energo/static/media/Services4.88ebf3b2d8d15b091aac.png",
     "static/media/Services2.png": "/Energo/static/media/Services2.e035ee5e566771d8c189.png",
     "static/media/building_icon3.svg": "/Energo/static/media/building_icon3.d11552c9839371ed1355e63cb84bd1db.svg",
+    "static/media/energoLogo.png": "/Energo/static/media/energoLogo.db7ba226ac6019a5425e.png",
     "static/media/building_icon1.svg": "/Energo/static/media/building_icon1.271102c4e863d92b6af85762c8637dff.svg",
     "static/media/building_icon4.svg": "/Energo/static/media/building_icon4.d6adbfbe02f35ebc72f8edbefb7173c4.svg",
     "static/media/building_icon2.svg": "/Energo/static/media/building_icon2.609680fd51f5c1e17821869b82461935.svg",
@@ -29,16 +30,17 @@
     "static/media/facebook.svg": "/Energo/static/media/facebook.67897879e6924a8835fbd67782fe247c.svg",
     "index.html": "/Energo/index.html",
     "static/media/contact.svg": "/Energo/static/media/contact.e74493c08bf229d979c7648ea180e2a9.svg",
-    "static/media/tick.svg": "/Energo/static/media/tick.c639f0b0365413d212da9f67b45e85f0.svg",
     "static/media/tick_green.svg": "/Energo/static/media/tick_green.c6fdb642a1269dd030f1a60da9d6709e.svg",
+    "static/media/rus.svg": "/Energo/static/media/rus.d69f4fa4453363a2d7f12c61d154ed25.svg",
     "static/media/cross.svg": "/Energo/static/media/cross.45ed2447af6a97b8c7ceda1ccf013090.svg",
+    "static/media/lat.svg": "/Energo/static/media/lat.9b4f986f68e1cd1f767f37c394ee9ceb.svg",
     "static/media/burger.svg": "/Energo/static/media/burger.5101dd3325f8156c0500d9d71528df2f.svg",
-    "main.c91a0a2d.css.map": "/Energo/static/css/main.c91a0a2d.css.map",
-    "main.3bb36587.js.map": "/Energo/static/js/main.3bb36587.js.map",
+    "main.6c0ed559.css.map": "/Energo/static/css/main.6c0ed559.css.map",
+    "main.8165b417.js.map": "/Energo/static/js/main.8165b417.js.map",
     "787.b6237803.chunk.js.map": "/Energo/static/js/787.b6237803.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c91a0a2d.css",
-    "static/js/main.3bb36587.js"
+    "static/css/main.6c0ed559.css",
+    "static/js/main.8165b417.js"
   ]
 }
