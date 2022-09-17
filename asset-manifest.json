@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Energo/static/css/main.6c0ed559.css",
-    "main.js": "/Energo/static/js/main.8165b417.js",
+    "main.js": "/Energo/static/js/main.41fa98ec.js",
     "static/js/787.b6237803.chunk.js": "/Energo/static/js/787.b6237803.chunk.js",
     "static/media/servicesBanner.jpg": "/Energo/static/media/servicesBanner.38aec0e58bde59181729.jpg",
     "static/media/eng.svg": "/Energo/static/media/eng.7a5fb183f12922c05275df2fe0cfce38.svg",
@@ -36,11 +36,11 @@
     "static/media/lat.svg": "/Energo/static/media/lat.9b4f986f68e1cd1f767f37c394ee9ceb.svg",
     "static/media/burger.svg": "/Energo/static/media/burger.5101dd3325f8156c0500d9d71528df2f.svg",
     "main.6c0ed559.css.map": "/Energo/static/css/main.6c0ed559.css.map",
-    "main.8165b417.js.map": "/Energo/static/js/main.8165b417.js.map",
+    "main.41fa98ec.js.map": "/Energo/static/js/main.41fa98ec.js.map",
     "787.b6237803.chunk.js.map": "/Energo/static/js/787.b6237803.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6c0ed559.css",
-    "static/js/main.8165b417.js"
+    "static/js/main.41fa98ec.js"
   ]
 }
