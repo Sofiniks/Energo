@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c0ed559.css",
-    "main.js": "/static/js/main.3519b982.js",
+    "main.css": "/static/css/main.de85898b.css",
+    "main.js": "/static/js/main.9f30f9bc.js",
     "static/js/787.b6237803.chunk.js": "/static/js/787.b6237803.chunk.js",
     "static/media/servicesBanner.jpg": "/static/media/servicesBanner.38aec0e58bde59181729.jpg",
     "static/media/eng.svg": "/static/media/eng.7a5fb183f12922c05275df2fe0cfce38.svg",
@@ -10,7 +10,9 @@
     "static/media/Services1.png": "/static/media/Services1.c92eced002f99f9f5b48.png",
     "static/media/solar_battery.png": "/static/media/solar_battery.ed3a9d3f6b67bbe00911.png",
     "static/media/donations.png": "/static/media/donations.ba58d0a70c68cc899b82.png",
+    "static/media/mainMobile2.jpg": "/static/media/mainMobile2.5b8cad28dd064204ed25.jpg",
     "static/media/land.png": "/static/media/land.b57768d90437c56d1d3c.png",
+    "static/media/mainMobile1.jpg": "/static/media/mainMobile1.6c4c6744f21bcfcb1e95.jpg",
     "static/media/Services3.png": "/static/media/Services3.ee22768f6e1801d1b168.png",
     "static/media/Services4.png": "/static/media/Services4.88ebf3b2d8d15b091aac.png",
     "static/media/Services2.png": "/static/media/Services2.e035ee5e566771d8c189.png",
@@ -35,12 +37,12 @@
     "static/media/cross.svg": "/static/media/cross.45ed2447af6a97b8c7ceda1ccf013090.svg",
     "static/media/lat.svg": "/static/media/lat.9b4f986f68e1cd1f767f37c394ee9ceb.svg",
     "static/media/burger.svg": "/static/media/burger.5101dd3325f8156c0500d9d71528df2f.svg",
-    "main.6c0ed559.css.map": "/static/css/main.6c0ed559.css.map",
-    "main.3519b982.js.map": "/static/js/main.3519b982.js.map",
+    "main.de85898b.css.map": "/static/css/main.de85898b.css.map",
+    "main.9f30f9bc.js.map": "/static/js/main.9f30f9bc.js.map",
     "787.b6237803.chunk.js.map": "/static/js/787.b6237803.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c0ed559.css",
-    "static/js/main.3519b982.js"
+    "static/css/main.de85898b.css",
+    "static/js/main.9f30f9bc.js"
   ]
 }
