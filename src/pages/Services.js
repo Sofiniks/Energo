@@ -18,7 +18,7 @@ const Services = () => {
     return (
         <>
             <Header />
-            <Hero bannerImage={isMobile ? mobileServicesImage : ServicesImage} text={i18next.t(`heroServicesSubtitle`)} />
+            <Hero bannerImage={isMobile ? mobileServicesImage : ServicesImage} titleText={i18next.t(`heroServicesTitle`)} text={i18next.t(`heroServicesSubtitle`)} />
             {!isTablet && <MainBanner />}
             <ServicesComponent />
             <Form />
