@@ -36,12 +36,12 @@ export const heroBannerDescription = [
 
 export const mainBannerNumbers = [
     {
-        number: '20 000+',
+        number: '4000+',
         title: 'numberTitle1',
         text: 'numberText1'
     },
     {
-        number: '15+',
+        number: '10+',
         title: 'numberTitle2',
         text: 'numberText2'
     },
