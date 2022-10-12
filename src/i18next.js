@@ -3,7 +3,8 @@ import { initReactI18next } from 'react-i18next';
 
 let en = {
     translation: {
-        title: 'Title',
+        title: 'About us',
+        heroServicesTitle: 'Services with fossil energy',
         heroHomeSubtitle: 'We work for you to save! Also, as a result of the work, the environmental footprint and energy consumption are reduced. Our team is committed to the long-term development and popularization of the use of alternative energy sources.',
         heroServicesSubtitle: 'When using traditional energy sources, the fundamental element is a monthly fee for services! In our work, we offer our clients alternative ways to reduce energy costs without losing comfort.',
         heroButton: 'find out more about our services',
@@ -21,7 +22,7 @@ let en = {
         numberTitle3: 'Investments',
         numberText1: 'already implemented',
         numberText2: 'on the market',
-        numberText3: 'attracted to our company',
+        numberText3: 'attracted to our clients',
 
         whyUs: 'Why us?',
         whyTitle1: 'Terms',
@@ -45,7 +46,7 @@ let en = {
         service1Desc4: 'Zero-energy homes – Buildings that use zero-cost alternative energy for heating or no heat at all. The specification of the passive house applies not only to residential buildings but also to public buildings. A passive house can be a school, a kindergarten or a supermarket, and the main condition is to follow the EU standards on passive houses. In our work, we calculate the energy balance of buildings in accordance with the requirements of Latvian legislation and international standards based on the calculation methodology of the Passive House Institute. ',
         service2Title: 'Thermography and air exchange',
         service2Subtitle1: 'Thermography',
-        service2Subtitle2: 'Structural breathability test',
+        service2Subtitle2: 'Blower Door test',
         service2Desc1: `Thermography is a method by which it is possible to determine the surface temperature distribution of sites by converting the site's emitted infrared radiation into a color image (thermogram). Thermal imaging inspection of buildings and structures is an effective way to test enclosing structures at the end of construction and during operation. With it, we will help you determine the partial and total heat loss of your structure, as well as detect possible, hidden defects in construction.`,
         service2Desc2: `Cold rooms are not always a consequence of insufficient insulation of the building, so before you start investing significant monetary resources into your real estate's insulation, check the breathability of its structures. This procedure will cost you much less and will give you a 100% understanding of what work you need to do. `,
         service3Title: 'Industrial audit',
@@ -59,7 +60,7 @@ let en = {
         iso2: `Standard ISO 50001 provides any organization regardless of its size and territorial or geographical location with a complete strategy of action in managerial and technical areas in order to improve the efficiency of the organization's energy system.`,
         service4Title: 'Technical examination',
         service4Subtitle1: 'Examination of energy certificates and proposed projects',
-        service4Subtitle2: 'Apkures, ventilācijas un gaisa kondicionēšanas sistēmu apsekošana',
+        service4Subtitle2: 'Assessments of the  heating, ventilation and air conditioning systems',
         service4Desc1pt1: `Our company's experts have extensive experience in conducting examinations of energy audits and energy passports for buildings of various classifications.`,
         service4Desc1pt2: 'The expert opinion assesses the compliance of the energy audit with the methodology for calculating energy audit(Cabinet of Ministers Regulation No. 222 "Methodology for Calculating the Energy Efficiency of Buildings and the Rules for Energy Certification of Buildings") and other regulations and standards.',
         service4Desc2pt1: 'Inspection of the heating and air conditioning system is carried out:',
@@ -87,7 +88,8 @@ let en = {
 
 let lv = {
     translation: {
-        title: 'Nosaukums',
+        title: 'Par mums',
+        heroServicesTitle: 'Pakalpojumi ar fosilo enerģiju',
         heroHomeSubtitle: 'Mēs strādājam jūsu ekonomijai! Darba rezultātā samazinās arī ekoloģiskā pēda un enerģijas patēriņš. Mūsu komanda tiecas uz ilglaicīgu attīstību un alternatīvās enerģijas avotu izmantošanas popularizēšanu.',
         heroServicesSubtitle: 'Izmantojot tradicionālos enerģijas avotus, galvenais elements ir ikmēneša pakalpojumu maksa! Savā darbā mēs klientiem piedāvājam alternatīvus energotaupības veidus, nezaudējot komfortu.',
         heroButton: 'uzzināt vairāk par mūsu pakalpojumiem',
@@ -96,23 +98,23 @@ let lv = {
         mainBannerTitle3: 'Teorija un prakse',
         mainBannerTitle4: 'Apmierināti klienti',
         mainBannerDesc1: 'mūsu pieredze šajā sektorā ir vairāk nekā desmit gadu.',
-        mainBannerDesc2: 'cieši sadarbojamies ar plašu šīs nozares speciālistu loku un publisko sektoru.',
+        mainBannerDesc2: 'cieši sadarbojamies ar plašu nozares speciālistu loku un publisko sektoru.',
         mainBannerDesc3: 'garantējam ka klients sasniegs vēlamo rezultātu.',
         mainBannerDesc4: '80% no ienākošajiem pasūtījumiem ir atkārtoti, no klientiem, kas jau sadarbojās ar mums.',
 
-        numberTitle1: 'Projekti',
+        numberTitle1: 'Realizētie',
         numberTitle2: 'Gadi',
-        numberTitle3: 'Investments',
-        numberText1: 'already implemented',
-        numberText2: 'on the market',
-        numberText3: 'attracted to our company',
+        numberTitle3: 'Investīciju',
+        numberText1: 'projekti',
+        numberText2: 'tirgū',
+        numberText3: 'piesaistīti mūsu klientiem ',
 
         whyUs: 'Kāpēc mēs?',
         whyTitle1: 'Termiņi',
         whyTitle2: 'Nekādu avansu',
         whyTitle3: 'Atbildība',
         whyTitle4: 'Starpniecība',
-        whyDesc1: 'izbraucam uz objektu 2pardienu laikā. Mazu un vidēju pasūtījumu izpilde vienas darba nedēļas laikā. Apjomīgu pasūtījumu izpilde 20 darba dienu laikā.',
+        whyDesc1: 'izbraucam uz objektu 2 darba dienu laikā. Mazu un vidēju pasūtījumu izpilde vienas darba nedēļas laikā. Apjomīgu pasūtījumu izpilde 20 darba dienu laikā.',
         whyDesc2: 'darba samaksa tikai pēc visu vienošanos izpildes.',
         whyDesc3: '100% uzdevumu risinājums augstākajā līmenī.',
         whyDesc4: 'pārstāvam klientu intereses celtniecības un projektēšanas uzraudzības iestādēs.',
@@ -137,7 +139,7 @@ let lv = {
         service3Subtitle2: 'Gada elektrības bilances sastādīšana',
         service3Subtitle3: 'Uzņēmumu ISO sertificēšana',
         service3Desc1: 'Energoaudits ir procedūra, kas notiek lielos uzņēmumos, lai saņemtu informāciju par visām uzņēmuma energopatēriņa struktūrām, kas tiek skaitliski novērtētas rentablai energotaupībai, un kuru rezultāti tiek apkopoti uzņēmuma sagatavotā un publicētā atskaitē.',
-        service3Desc2: 'Elektroenerģijas lietotājs saskaņā ar Energoefektivitātes likumu ir komersants, kura gada elektroenerģijas patēriņš pārsniedz 500 megavatstundas divos kalendāra gados pēc kārtas. Mēs palīdzam komersantiem sagatavot elektroenerģijas bilances un iesniegt tās valsts iestādēs, kā arī palīdzam konstatēt elektroenerģijas papildu patēriņu darbības laikā, kas var optimizēt komersanta izdevumus. ',
+        service3Desc2: 'Elektroenerģijas lietotājs saskaņā ar Energoefektivitātes likumu ir komersants, kura gada elektroenerģijas patēriņš pārsniedz 500 megavatstundas divos kalendāra gados pēc kārtas. Mēs palīdzam komersantiem sagatavot elektroenerģijas bilances un iesniegt tās Valsts iestādēs, kā arī palīdzam konstatēt elektroenerģijas papildu patēriņu darbības laikā, kas var optimizēt komersanta izdevumus. ',
         service3Desc3: 'Apstākļos, kad visā pasaulē strauji pieaug enerģijas cena un sabiedrības prasības samazināt siltumnīcefekta gāzu emisiju, energopatēriņa efektīva pārvalde kļūst par katra biznesa prioritāti, kas nodrošina ne tikai ātru produkcijas atmaksāšanos, bet arī ilgtermiņa attīstību energonesēju nestabilo cenu apstākļos. Palīdzam ieviest un uzturēt ISO 50001.',
         iso1: 'ISO 50001 (Energy management systems – Requirements with guidance for use) ir starptautisks standarts, ko energosistēmu pārvaldībai izveidoja Starptautiskā standartizācijas organizācija, tas nosaka energomenedžmenta sistēmas izveides, ieviešanas, attīstības un uzlabošanas prasības, kuras mērķis ir ļaut uzņēmumam ievērot sistēmisku pieeju energosistēmas secīgā uzlabošanā, tostarp energoefektivitātē, energodrošībā un enerģijas patēriņā.',
         iso2: 'ISO 50001 standarts jebkuram uzņēmumam, neatkarīgi no tā lieluma, teritoriālās vai ģeogrāfiskās atrašanās vietas, sniedz pilnvērtīgu darbības stratēģiju menedžmenta un tehniskajā jomā ar mērķi palielināt uzņēmuma energosistēmas efektivitāti.',
@@ -162,8 +164,8 @@ let lv = {
         messageReceived: 'Mēs esam saņēmuši jūsu ziņu un sazināsimies ar jums tuvāko 24 stundu laikā!',
         contacts: 'Kontakti',
         contactUs: 'Sazināties ar mums',
-        contactUsText1: 'Feel free to contact us any time',
-        contactUsText2: 'We will get back to you as soon as we can!',
+        contactUsText1: 'Juties brīvi sazinaties ar mums jebkura laikā!',
+        contactUsText2: 'Mēs ar jums sazināsimies, cik drīz vien varēsim!',
         sendButton: 'Nosūtīt',
         developedBy: 'Mājas lapu izstrāde'
     }
@@ -171,9 +173,10 @@ let lv = {
 
 let ru = {
     translation: {
-        title: 'Заголовок',
+        title: 'О нас',
+        heroServicesTitle: 'Услуги с невозобновляемой энергией',
         heroHomeSubtitle: 'Мы работаем для вашей экономии!Также, в результате работы, уменьшается уэкологический отпечаток и снижается расход энергии.Наша команда настроена на долгосрочное развитие и популяризацию использования альтернативных источников энергии.',
-        heroServicesSubtitle: 'Используя традиционные источники энергии основополагающим элементом является ежемесячная плата за услуги! В своей работе, мы предлагаем клиентам альтернативные способы снижения энергозатрат без потери комфорта.',
+        heroServicesSubtitle: 'Используя традиционные источники энергии основополагающим элементом являются коммунальные платежи! В своей работе, мы предлагаем клиентам альтернативные способы снижения энергозатрат без потери комфорта.',
         heroButton: 'узнать о наших услугах больше',
         mainBannerTitle1: 'Опыт',
         mainBannerTitle2: 'Прямые контакты',
@@ -184,19 +187,19 @@ let ru = {
         mainBannerDesc3: 'Мы даём гарантию на достижение клиентом желаемого результата.',
         mainBannerDesc4: '80% поступающих нам заказов – повторные, от клиентов, кто с нами, уже, сотрудничал.',
 
-        numberTitle1: 'Проэкты',
-        numberTitle2: 'лет',
-        numberTitle3: 'Investments',
-        numberText1: 'already implemented',
+        numberTitle1: 'Проектов',
+        numberTitle2: 'Лет',
+        numberTitle3: 'Инвестиций',
+        numberText1: 'выполнено',
         numberText2: 'на рынке',
-        numberText3: 'attracted to our company',
+        numberText3: 'привлечённых нашим клиентам',
 
         whyUs: 'Почему мы?',
         whyTitle1: 'сроки',
         whyTitle2: 'никаких авансов',
         whyTitle3: 'ответственность',
         whyTitle4: 'посредничество',
-        whyDesc1: 'выезд на объект в течении 2 рабочих дней. выполнение мелких и средних заказов в течении одной рабочей недели. выполнение крупных заказов в течении 20 рабочих дней.',
+        whyDesc1: 'выезд на объект в течении 2 рабочих дней. Выполнение мелких и средних заказов в течении одной рабочей недели. Выполнение крупных заказов в течении 20 рабочих дней.',
         whyDesc2: 'оплата труда только по завершении всех договорённостей',
         whyDesc3: '100% решение задач на высшем уровне',
         whyDesc4: 'Представляем интересы клиентов в органах надзора за строительством и проектированием',
@@ -219,7 +222,7 @@ let ru = {
         service3Title: 'Промышленный аудит',
         service3Subtitle1: 'Производственный энергоаудит',
         service3Subtitle2: 'Составление электрического баланса за год',
-        service3Subtitle3: 'ИСО сертификация предприятий',
+        service3Subtitle3: 'ISO сертификация предприятий',
         service3Desc1: 'Энергоаудит – процедура, проводимая в крупных компаниях для получения информации обо всех структурах энергопотребления предприятия, которые количественно оцениваются для рентабельного энергосбережения, и результаты которых обобщаются в отчете, подготовленном и выпущенном компанией.',
         service3Desc2: 'Потребителем электроэнергии в соответствии с законoм об энергоэффективности является коммерсант, годовое потребление электроэнергии которого превышает 500 МВтч, в течение двух последующих календарных лет. Мы помогаем коммерсантам в подготовке и сдачи балансов электроэнергии в государственные органы, а также помогаем выявлять побочные траты электроэнергии в ходе деятельности, что может привести к оптимизации трат коммерсанта. ',
         service3Desc3: 'В условиях стремительного  роста стоимости энергии во всем мире и требований общества сократить выбросы парниковых газов эффективное управление энергопотреблением становится приоритетом для каждого бизнеса, который обеспечивает не только быструю окупаемость продукции, но и долгосрочное развити в условиях нестабильных цен на энергоносители. Мы помогаем вводить и поддерживать ISO 50001.',
@@ -227,7 +230,7 @@ let ru = {
         iso2: 'Стандарт ISO 50001 снабжает любую организацию, независимо от её размера, территориального или географического положения, полноценной стратегией действий в менеджерской и в технических областях с целью повышения эффективности энергосистемы организации.',
         service4Title: 'Техническая экспертиза',
         service4Subtitle1: 'Экспертиза энергосертификатов и предлагаемых проектов',
-        service4Subtitle2: 'Apkures, ventilācijas un gaisa kondicionēšanas sistēmu apsekošana',
+        service4Subtitle2: 'Экспертиза отопительных котлов, систем вентиляции и кондиционирования воздуха',
         service4Desc1pt1: 'Специалисты нашей компании имеют большой опыт в проведении экспертизы  энергоаудита и энергетического паспорта зданий различной классификации.',
         service4Desc1pt2: 'Экспертное заключение дает оценку соответствия энергоаудита методике расчета энергоаудита (Правила Кабинета Министров № 222 «Методика расчета энергоэффективности зданий и Правила энергосертификации зданий») и другим нормативным актам и стандартам. ',
         service4Desc2pt1: 'Осмотр системы отопления и кондиционирования воздуха проводится:',
@@ -246,8 +249,8 @@ let ru = {
         messageReceived: 'Мы получили ваше сообщение и свяжемся с вами в течение следующих 24 часов!',
         contacts: 'Контакты',
         contactUs: 'Связаться с нами',
-        contactUsText1: 'Feel free to contact us any time',
-        contactUsText2: 'We will get back to you as soon as we can!',
+        contactUsText1: 'Не стесняйтесь обращаться к нам в любое время!',
+        contactUsText2: 'Мы вам ответим, как только сможем!',
         sendButton: 'Отправить',
         developedBy: 'Разработка сайта'
     }
@@ -261,8 +264,8 @@ i18next
             ru: ru,
             lv: lv
         },
-        lng: 'en',
-        fallbackLng: 'en',
+        lng: 'lv',
+        fallbackLng: 'lv',
         interpolation: { escapeValue: false }
     });
 

@@ -81,7 +81,7 @@ const ServicesComponent = () => {
                         {activeSubService.desc.map(desc => (
                             <div><p>{i18next.t(`${desc}`)}</p></div>
                         ))}
-                        <button>{i18next.t(`servicePriceButton`)}</button>
+                        <button><a href='#contacts'>{i18next.t(`servicePriceButton`)}</a></button>
                     </div>
                     <div className={styles.services_images}>
                         <div className={styles.services_mainImage}>

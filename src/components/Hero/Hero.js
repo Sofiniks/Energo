@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useTranslation } from 'react-i18next';
 import i18next from '../../i18next';
 
-const Hero = ({ withOverlay, isMainPage, bannerImage, text }) => {
+const Hero = ({ withOverlay, isMainPage, bannerImage, text, titleText }) => {
     const isTablet = useMediaQuery({ maxWidth: 1023 });
     const { t } = useTranslation();
 
