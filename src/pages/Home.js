@@ -17,7 +17,7 @@ const Home = () => {
     return (
         <>
             <Header />
-            <Hero withOverlay isMainPage bannerImage={isMobile ? MobileMainBanner : BannerImage} text={i18next.t(`heroHomeSubtitle`)} />
+            <Hero withOverlay isMainPage bannerImage={isMobile ? MobileMainBanner : BannerImage} titleText={i18next.t(`title`)} text={i18next.t(`heroHomeSubtitle`)} />
             <MainBanner />
             <WhyChooseUs />
             <Form />
