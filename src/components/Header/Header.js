@@ -25,6 +25,10 @@ const Header = () => {
     const dispatch = useDispatch();
     const nav = [
         {
+            title: 'home',
+            to: '/'
+        },
+        {
             title: 'services',
             to: '/services'
         },
