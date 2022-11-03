@@ -65,7 +65,7 @@ const ServicesComponent = () => {
     })
 
     return (
-        <div className={styles.services}>
+        <div className={styles.services} id="services">
             <div className={styles.services_container}>
                 <div className={styles.services_menu}>
                     <div className={styles.services_heading}>
