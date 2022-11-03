@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useTranslation } from 'react-i18next';
 import i18next from '../../i18next';
 
-const Hero = ({ withOverlay, isMainPage, bannerImage, text, titleText }) => {
+const Hero = ({ withOverlay, isMainPage, bannerImage, text, titleText, buttonLink }) => {
     const isTablet = useMediaQuery({ maxWidth: 1023 });
     const { t } = useTranslation();
 
@@ -31,7 +31,7 @@ const Hero = ({ withOverlay, isMainPage, bannerImage, text, titleText }) => {
                     <h1>{titleText}</h1>
                     <h3>{text}</h3>
                     <div className={styles.hero_button_container}>
-                        <button><a href='#contacts'>{i18next.t(`heroButton`)}</a></button>
+                        <button><a href={buttonLink}>{i18next.t(`heroButton`)}</a></button>
                     </div>
                 </div>
 
