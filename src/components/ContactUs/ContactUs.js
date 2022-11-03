@@ -144,7 +144,7 @@ const Form = () => {
                                     </li>
                                 </ul>
                                 <ul className={styles.contacts_socials}>
-                                    <li className={styles.contacts_socials_item}><a href={contacts.phone}><img src={whatsapp} alt="socials" /></a></li>
+                                    <li className={styles.contacts_socials_item}><a href={contacts.wp}><img src={whatsapp} alt="socials" /></a></li>
                                     <li className={styles.contacts_socials_item}><a href={contacts.fb}><img src={facebook} alt="socials" /></a></li>
                                     <li className={styles.contacts_socials_item}><a href="/"><img src={instagram} alt="socials" /></a></li>
                                 </ul>
