@@ -4,6 +4,7 @@ import { initReactI18next } from 'react-i18next';
 let en = {
     translation: {
         title: 'About us',
+        home: 'Home',
         heroServicesTitle: 'Services with fossil energy',
         heroHomeSubtitle: 'We work for you to save! Also, as a result of the work, the environmental footprint and energy consumption are reduced. Our team is committed to the long-term development and popularization of the use of alternative energy sources.',
         heroServicesSubtitle: 'When using traditional energy sources, the fundamental element is a monthly fee for services! In our work, we offer our clients alternative ways to reduce energy costs without losing comfort.',
@@ -89,6 +90,7 @@ let en = {
 let lv = {
     translation: {
         title: 'Par mums',
+        home: 'Uz sākumu',
         heroServicesTitle: 'Pakalpojumi ar fosilo enerģiju',
         heroHomeSubtitle: 'Mēs strādājam jūsu ekonomijai! Darba rezultātā samazinās arī ekoloģiskā pēda un enerģijas patēriņš. Mūsu komanda tiecas uz ilglaicīgu attīstību un alternatīvās enerģijas avotu izmantošanas popularizēšanu.',
         heroServicesSubtitle: 'Izmantojot tradicionālos enerģijas avotus, galvenais elements ir ikmēneša pakalpojumu maksa! Savā darbā mēs klientiem piedāvājam alternatīvus energotaupības veidus, nezaudējot komfortu.',
@@ -174,6 +176,7 @@ let lv = {
 let ru = {
     translation: {
         title: 'О нас',
+        home: 'На главную',
         heroServicesTitle: 'Услуги с невозобновляемой энергией',
         heroHomeSubtitle: 'Мы работаем для вашей экономии!Также, в результате работы, уменьшается уэкологический отпечаток и снижается расход энергии.Наша команда настроена на долгосрочное развитие и популяризацию использования альтернативных источников энергии.',
         heroServicesSubtitle: 'Используя традиционные источники энергии основополагающим элементом являются коммунальные платежи! В своей работе, мы предлагаем клиентам альтернативные способы снижения энергозатрат без потери комфорта.',
