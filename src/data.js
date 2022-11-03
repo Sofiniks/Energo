@@ -181,7 +181,8 @@ export const contacts = {
     address: 'Ludzas iela 2, Latgales priekšpilsēta, Rīga, LV-1003',
     email: 'energoefektivitate@gmail.com',
     phone: '+371-2777-3555',
-    fb: 'https://facebook.com/GoldenA.assessments'
+    fb: 'https://facebook.com/GoldenA.assessments',
+    in: 'https://www.instagram.com/energoefektivitate'
 };
 
 export const energyBannerNumber = '15,597,255,043';
