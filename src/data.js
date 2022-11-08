@@ -182,7 +182,8 @@ export const contacts = {
     email: 'energoefektivitate@gmail.com',
     phone: '+371-2777-3555',
     fb: 'https://facebook.com/GoldenA.assessments',
-    in: 'https://www.instagram.com/energoefektivitate'
+    in: 'https://www.instagram.com/energoefektivitate',
+    wa: 'https://wa.me/37127773555'
 };
 
 export const energyBannerNumber = '15,597,255,043';
