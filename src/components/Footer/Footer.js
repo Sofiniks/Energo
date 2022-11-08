@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={styles.footer_bottom}>
-                    <div className={styles.footer_credentials}>{i18next.t('developedBy')} <span>Webbynavia</span></div>
+                    <div className={styles.footer_credentials}>{i18next.t('developedBy')} <span><a href="https://webbynavia.no">Webbynavia</a></span></div>
                 </div>
             </div>
         </footer>
